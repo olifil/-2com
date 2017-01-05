@@ -1,0 +1,91 @@
+// out: ../css/style.css, compress: false
+
+// Import des feuilles de styles complémentaires
+@import "fonts.less";
+@import "variables.less";
+@import "identity.less";
+@import "nav.less";
+@import "buttons.less";
+
+@media screen {
+  *
+  {
+    box-sizing: border-box;
+  }
+
+  body {
+  	margin: 0;
+  	padding: 0;
+
+    font-family: akrobatregular;
+    font-size: @global-font-size;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4
+  {
+    font-family: akrobatbold;
+  }
+
+  p
+  {
+    &.bold
+    {
+      font-weight: bold;
+    }
+  }
+  /* Mise en place des différentes parties / slides */
+  #slide1, #slide2, #slide3, #slide4 {
+  	height: 1000px;
+  	padding-top:100px;
+    & h2
+    {
+      font-size: round(@global-font-size * 4.375);
+      text-shadow: 2px 1px 6px @white;
+      color: @base-gray;
+    }
+    & p {
+      font-size: round(@global-font-size * 1.75);
+    }
+    & .item
+    {
+      margin-top: 200px;
+    }
+    & .right
+    {
+      text-align: right;
+      margin: 0 200px 50px 0;
+    }
+  }
+
+  #slide1 {
+    padding-top: 0;
+  	background:url(../imgs/bg-1.jpg) center 0 no-repeat fixed;
+  	& .header
+    {
+      position: fixed;
+    }
+  }
+
+  #slide2 {
+  	background: url(../imgs/bg-2.jpg) center 0 no-repeat fixed;
+  }
+
+  #slide3 {
+  	background: url(../imgs/bg-3.jpg) center 0 no-repeat fixed;
+  }
+
+  #slide4 {
+  	background: url(../imgs/bg-4.jpg) center 0 no-repeat fixed;
+  }
+
+  .superbg
+  {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+  }
+}

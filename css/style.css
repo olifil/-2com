@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'akrobatblack';
+  src: url('../fonts/akrobat-black-webfont.eot');
+  src: url('../fonts/akrobat-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/akrobat-black-webfont.woff2') format('woff2'), url('../fonts/akrobat-black-webfont.woff') format('woff'), url('../fonts/akrobat-black-webfont.svg#akrobatblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'akrobatbold';
+  src: url('../fonts/akrobat-bold-webfont.eot');
+  src: url('../fonts/akrobat-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/akrobat-bold-webfont.woff2') format('woff2'), url('../fonts/akrobat-bold-webfont.woff') format('woff'), url('../fonts/akrobat-bold-webfont.svg#akrobatbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'akrobatregular';
+  src: url('../fonts/akrobat-regular-webfont.eot');
+  src: url('../fonts/akrobat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/akrobat-regular-webfont.woff2') format('woff2'), url('../fonts/akrobat-regular-webfont.woff') format('woff'), url('../fonts/akrobat-regular-webfont.svg#akrobatregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aller_display';
+  src: url('../fonts/allerdisplay-webfont.eot');
+  src: url('../fonts/allerdisplay-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/allerdisplay-webfont.woff2') format('woff2'), url('../fonts/allerdisplay-webfont.woff') format('woff'), url('../fonts/allerdisplay-webfont.ttf') format('truetype'), url('../fonts/allerdisplay-webfont.svg#aller_displayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+a .compagny-name {
+  position: absolute;
+  top: 15px;
+  font-family: akrobatbold;
+  font-size: 55px;
+  letter-spacing: 3px;
+  color: #666666;
+}
+a .compagny-accent {
+  font-family: akrobatblack;
+  font-size: 91px;
+  color: #cc3333;
+}
+a .compagny-slogan {
+  position: absolute;
+  top: 120px;
+  margin-left: 15px;
+  font-family: akrobatregular;
+  font-size: 27px;
+  color: #666666;
+}
+a:hover {
+  text-decoration: none;
+}
+#menu {
+  position: fixed;
+  background-color: rgba(204, 51, 51, 0.2);
+  box-shadow: 0 0 3px #333333;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 240px;
+  right: -240px;
+  z-index: 9999;
+}
+#menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #ffffff;
+}
+#menu ul li {
+  height: 47px;
+  padding-left: 30px;
+  line-height: 47px;
+  border-bottom: 1px solid rgba(204, 51, 51, 0.2);
+}
+#menu ul li.active {
+  background: rgba(204, 51, 51, 0.8);
+  box-shadow: 0 0 3px #333333;
+}
+#menu ul li:hover {
+  background: rgba(204, 51, 51, 0.4);
+}
+#menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+#menu ul li a:hover {
+  color: #ffffff;
+}
+.btn-default {
+  background-color: rgba(55, 55, 55, 0.2);
+  border: 1px solid rgba(55, 55, 55, 0.06);
+  color: rgba(255, 255, 255, 0.2);
+  transition: background-color, 300ms;
+}
+.btn-default:hover {
+  background-color: rgba(55, 55, 55, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+.btn-close {
+  width: 48px;
+  line-height: 33px;
+  position: absolute;
+  top: 0;
+  left: -48px;
+}
+.btn-menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+.btn-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+.action-red {
+  line-height: 40px;
+  margin: 25px 50px 0 0;
+  padding: 10px 30px;
+  font-size: 32px;
+  background-color: rgba(204, 51, 51, 0.8);
+  color: #ffffff;
+}
+.action-orange {
+  line-height: 40px;
+  margin: 25px 50px 0 0;
+  padding: 10px 30px;
+  font-size: 32px;
+  background-color: rgba(241, 167, 98, 0.8);
+  color: #ffffff;
+}
+@media screen {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: akrobatregular;
+    font-size: 16px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: akrobatbold;
+  }
+  p.bold {
+    font-weight: bold;
+  }
+  /* Mise en place des différentes parties / slides */
+  #slide1,
+  #slide2,
+  #slide3,
+  #slide4 {
+    height: 1000px;
+    padding-top: 100px;
+  }
+  #slide1 h2,
+  #slide2 h2,
+  #slide3 h2,
+  #slide4 h2 {
+    font-size: 70px;
+    text-shadow: 2px 1px 6px #ffffff;
+    color: #333333;
+  }
+  #slide1 p,
+  #slide2 p,
+  #slide3 p,
+  #slide4 p {
+    font-size: 28px;
+  }
+  #slide1 .item,
+  #slide2 .item,
+  #slide3 .item,
+  #slide4 .item {
+    margin-top: 200px;
+  }
+  #slide1 .right,
+  #slide2 .right,
+  #slide3 .right,
+  #slide4 .right {
+    text-align: right;
+    margin: 0 200px 50px 0;
+  }
+  #slide1 {
+    padding-top: 0;
+    background: url(../imgs/bg-1.jpg) center 0 no-repeat fixed;
+  }
+  #slide1 .header {
+    position: fixed;
+  }
+  #slide2 {
+    background: url(../imgs/bg-2.jpg) center 0 no-repeat fixed;
+  }
+  #slide3 {
+    background: url(../imgs/bg-3.jpg) center 0 no-repeat fixed;
+  }
+  #slide4 {
+    background: url(../imgs/bg-4.jpg) center 0 no-repeat fixed;
+  }
+  .superbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

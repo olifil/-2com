@@ -1,0 +1,33 @@
+// main: style.less
+
+a
+{
+  & .compagny-name
+  {
+    position: absolute;
+    top: 15px;
+    font-family: akrobatbold;
+    font-size:  round(@global-font-size * 3.42);
+    letter-spacing: 3px;
+    color: @name-gray;
+  }
+  & .compagny-accent
+  {
+    font-family: akrobatblack;
+    font-size:  round(@global-font-size * 5.71);
+    color: @tonique-1;
+  }
+  & .compagny-slogan
+  {
+    position: absolute;
+    top: 120px;
+    margin-left: 15px;
+    font-family: akrobatregular;
+    font-size: round(@global-font-size * 1.71);
+    color: @name-gray;
+  }
+  &:hover
+  {
+    text-decoration: none;
+  }
+}
