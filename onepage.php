@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: OnePage
+*/
+ ?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
